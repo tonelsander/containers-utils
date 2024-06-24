@@ -1,0 +1,9 @@
+version: ‘3.7'
+
+services:
+  base-jupyter:
+    image: vanilla-jupyter:latest
+    ports:
+      - 48888:8888
+    volumes:
+      - ./data/tsf_jupyter:/home/jovyan/work
